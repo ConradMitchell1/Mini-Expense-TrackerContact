@@ -1,0 +1,23 @@
+﻿@model Mini_Expense_Tracker.Models.ViewModels.ContactInput
+<h1>Contact me page</h1>
+<a href="mailto:fakeEmail@example.com">Email me!</a>
+<p>TeleNo: 0123456789</p>
+
+<form method="post">
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+    </div>
+
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+    </div>
+
+    <div>
+        <label asp-for="Message"></label>
+        <textarea asp-for="Message"></textarea>
+    </div>
+
+    <button type="submit">Send</button>
+</form>
